@@ -1,0 +1,272 @@
+body{
+ text-align: center;
+ font-family: 'Bai Jamjuree', sans-serif;
+ color: #9fabb2;
+ font-size: 18px;
+}
+a{
+  color: #4c545d;
+}
+a:hover{
+  text-decoration: none;
+  color: #26baa4;
+}
+h1{
+  margin-top: 20px;
+}
+h1,h2,h3{
+  font-weight: 600;
+  color: #4c545d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+p{
+  padding: 0 25%;
+}
+.container-fluid{
+  padding: 0;
+}
+
+/**************Header*********************/
+.header-logo{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background-image: url(bg-header-desktop.png);
+}
+
+/***************features*******************/
+#features{
+  padding-top: 70px;
+}
+.comp-image{
+  position: absolute;
+  right: 0;
+}
+#features .row{
+  padding-top: 50px;
+}
+.features-text{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.features-text p{
+  margin-bottom: 60px;
+}
+.features-text p, .features-text h3{
+  padding: 0 10%;
+}
+.feature-second-h2{
+  margin-top: 150px;
+}
+.image-devices{
+  margin-top: 80px;
+}
+.card-text{
+  padding: 0 10%;
+}
+.feature-icons{
+  height:40px;
+}
+.card-box img{
+  margin: 20px 0;
+}
+
+/*************logos****************/
+#logos{
+  padding: 50px 0;
+}
+.brand-logos{
+   margin: 50px 30px;
+ }
+.logo-box{
+  display: flex;
+  align-items: center;
+}
+.empty-box{
+  width: 0;
+}
+ /************footer**************/
+ #footer{
+   margin-top: 150px;
+   background-color: #f5f6f8;
+   padding: 30px;
+ }
+ .footer-logo-box{
+   display: flex;
+   align-items: center;
+ }
+ .footer-logo{
+   width: 60px;
+ }
+ .link-grid{
+   padding-top: 15px;
+   padding-bottom: 15px;
+  text-align: left;
+ }
+ .social-icons-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+ }
+ .social-icons{
+  color: #4c545d;
+  font-size: 30px;
+  margin-left: 10px;
+  padding-left: 20px;
+ }
+ .social-icons:hover{
+   color: #26baa4;
+ }
+
+ .big-button {
+	box-shadow: 0 2px 0 0 #899599;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color: white;
+	font-family:Arial;
+	font-size:18px;
+  margin: 20px 10px;
+	padding:12px 33px;
+	text-decoration:none;
+}
+.big-button:hover {
+	color: white;
+}
+.big-button:active {
+	position:relative;
+	top:1px;
+}
+.ios-button{
+  background-color:#26baa4;
+}
+.ios-button:hover{
+  background-color: #0f917e;
+}
+.mac-button{
+  background-color: #6173ff;
+}
+.mac-button:hover{
+  background-color: #2e3fc7;
+}
+.left-button{
+  text-align: right;
+}
+.right-button{
+  text-align: left;
+}
+
+@media (max-width: 992px){
+  p{
+    padding: 0 5%;
+  }
+  .header-logo{
+    background-image: url(bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+  }
+  .left-button{
+    text-align: center;
+  }
+  .right-button{
+    text-align: center;
+  }
+  /********features*********/
+  .comp-image{
+    position: static;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .tablet-image{
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .features-text p, .features-text h3{
+    text-align: center;
+  }
+  .feature-second-h2{
+    margin-top: 100px;
+  }
+  .card-box{
+    margin-bottom: 60px;
+  }
+
+}
+@media (max-width: 576px){
+  .big-button{
+    width: 80%;
+  }
+  #footer .link-grid{
+    text-align: center;
+  }
+  .footer-logo-box{
+    justify-content: center;
+  }
+  .social-icons-box{
+    justify-content: center;
+  }
+  .social-icons{
+    margin: 20px 30px;
+    padding: 0 0 0 0;
+  }
+  .footer-logo{
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+
+/***********5 column grid layout ******************/
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
